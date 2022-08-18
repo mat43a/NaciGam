@@ -1,0 +1,70 @@
+using System;
+
+namespace NaciGame
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Pokaji kakvo obicha, Naci");
+
+            Console.WriteLine("Izberi:");
+
+            Console.WriteLine("1. Hamburger");
+
+            Console.WriteLine("2. Pizza");
+
+            int chois = int.Parse (Console.ReadLine());
+
+            if (chois == 1)
+            {
+                Console.WriteLine("Greshka");
+            }
+
+            else if (chois == 2)
+            {
+                Console.WriteLine("Pravilno");
+            }
+
+            int chois == 0;
+
+            Console.WriteLine("Izberi:");
+
+            Console.WriteLine("1. Mercedes");
+
+            Console.WriteLine("2. Tesla");
+
+            int chois = int.Parse(Console.ReadLine());
+
+            if (chois == 1)
+            {
+                Console.WriteLine("Greshka");
+            }
+
+            else if (chois == 2)
+            {
+                Console.WriteLine("Pravilno");
+            }
+
+            Console.WriteLine("Izberi:");
+
+            Console.WriteLine("1. Man.Unaitet");
+
+            Console.WriteLine("2. RealMadrid");
+
+            int chois = int.Parse(Console.ReadLine());
+
+            if (chois == 1)
+            {
+                Console.WriteLine("Greshka");
+            }
+
+            else if (chois == 2)
+            {
+                Console.WriteLine("Pravilno");
+            }
+
+            int chois == 0;
+        }
+    }
+}
