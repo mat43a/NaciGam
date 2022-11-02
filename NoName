@@ -1,0 +1,39 @@
+ // Add OAuth2 and OpenID Connect clients to database
+            if (configContext!.Clients.Any() == false)
+            {
+                foreach (Client client in Config.Clients)
+                {
+                    configContext.Clients.Add(client.ToEntity());
+                }
+                configContext.SaveChanges();
+            }
+
+            // Add facts about a user to database (like email, user Id, etc.)
+            if (configContext.IdentityResources.Any() == false)
+            {
+                foreach (IdentityResource resource in Config.IdentityResources)
+                {
+                    configContext.IdentityResources.Add(resource.ToEntity());
+                }
+                configContext.SaveChanges();
+            }
+
+            // Add API access scopes to database
+            if (configContext.ApiScopes.Any() == false)
+            {
+                foreach (ApiScope apiAccess in Config.ApiScopes)
+                {
+                    configContext.ApiScopes.Add(apiAccess.ToEntity());
+                }
+                configContext.SaveChanges();
+            }
+
+            // Add APIs needed to be protected to database
+            if (configContext.ApiResources.Any() == false)
+            {
+                foreach (ApiResource api in Config.ApiResources)
+                {
+                    configContext.ApiResources.Add(api.ToEntity());
+                }
+                configContext.SaveChanges();
+            }
